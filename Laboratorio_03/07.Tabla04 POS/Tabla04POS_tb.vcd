@@ -1,0 +1,151 @@
+$date
+	Fri Jul 31 14:42:38 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Tabla04POS $end
+$var wire 1 ! notA $end
+$var wire 1 " notB $end
+$var wire 1 # notC $end
+$var wire 1 $ notD $end
+$var wire 1 % orA $end
+$var wire 1 & orB $end
+$var wire 1 ' orC $end
+$var wire 1 ( orD $end
+$var wire 1 ) orE $end
+$var wire 1 * orF $end
+$var wire 1 + orG $end
+$var wire 1 , orH $end
+$var wire 1 - orI $end
+$var wire 1 . out $end
+$var reg 1 / A $end
+$var reg 1 0 B $end
+$var reg 1 1 C $end
+$var reg 1 2 D $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+02
+01
+00
+0/
+1.
+1-
+1,
+1+
+1*
+1)
+1(
+1'
+1&
+1%
+1$
+1#
+1"
+1!
+$end
+#1
+0.
+0%
+0$
+12
+#2
+1.
+1$
+0#
+1%
+02
+11
+#3
+0$
+12
+#4
+0.
+1$
+1#
+1'
+0&
+0"
+02
+01
+10
+#5
+0.
+0'
+0$
+1&
+12
+#6
+1.
+1$
+0#
+1'
+02
+11
+#7
+0$
+12
+#8
+1.
+1$
+1#
+1"
+1)
+1(
+0!
+02
+01
+00
+1/
+#9
+0.
+0(
+0$
+12
+#10
+1.
+1$
+0#
+1(
+02
+11
+#11
+0.
+0)
+0$
+12
+#12
+1$
+1#
+1+
+0*
+0"
+1)
+02
+01
+10
+#13
+0.
+0+
+0$
+1*
+12
+#14
+1$
+0,
+0#
+1+
+02
+11
+#15
+0.
+0-
+0$
+1,
+12
+#16
