@@ -7,10 +7,10 @@ module testbench();
   behavioralModelling02  BM2(p4, p5, p6, out2);  //Ejercicio01_Tabla02
   behavioralModelling03  BM3(p7, p8, p9, p10, out3);  //Ejercicio01_Tabla03
   behavioralModelling04  BM4(p11, p12, p13, p14, out4);  //Ejercicio01_Tabla04
-  gateLevel01  GL1(p15, p16, p17, p18, out5);   //Ejercicio02_Tabla01
-  gateLevel02  GL2(p19, p20, p21, out6);    //Ejercicio02_Tabla02
-  gateLevel03  GL3(p22, p23, p24, p25, out7);   //Ejercicio02_Tabla03
-  gateLevel04  GL4(p26, p27, p28, out8);    //Ejercicio02_Tabla04
+  gateLeve01  GL1(p15, p16, p17, p18, out5);   //Ejercicio02_Tabla01
+  gateLeve02  GL2(p19, p20, p21, out6);    //Ejercicio02_Tabla02
+  gateLeve03  GL3(p22, p23, p24, p25, out7);   //Ejercicio02_Tabla03
+  gateLeve04  GL4(p26, p27, p28, out8);    //Ejercicio02_Tabla04
 
   initial begin
    $display("A B C | Y");
@@ -91,7 +91,7 @@ module testbench();
  end
 
  initial begin
-   #64
+   #48
    $display("\n");
    $display("A B C D | Y");
    $display("-------|--");
@@ -115,7 +115,7 @@ module testbench();
  end
 
  initial begin
-   #80
+   #64
    $display("\n");
    $display("A B C | Y");
    $display("------|--");
@@ -131,7 +131,7 @@ module testbench();
  end
 
  initial begin
-   #88
+   #72
    $display("\n");
    $display("A B C D | Y");
    $display("-------|--");
@@ -155,7 +155,7 @@ module testbench();
  end
 
  initial begin
-   #104
+   #88
    $display("\n");
    $display("A B C | Y");
    $display("------|--");
@@ -171,7 +171,7 @@ module testbench();
  end
 
  initial
-   #120 $finish;
+   #100 $finish;
 
  initial begin
    $dumpfile("Ejercicio04_tb.vcd");
