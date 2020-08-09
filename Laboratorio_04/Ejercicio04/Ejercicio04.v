@@ -15,8 +15,12 @@ module behavioralModelling04 (input wire A, B, C, D, output wire Y);    //Ejerci
 endmodule
 
 module gateLeve01 (input wire A, B, C, D, output wire Y);    //Ejercicio02_Tabla01
-  wire notA, notB, notC, notD;
-  or  O1(Y, notA, notB, notC, notD);
+  wire notA, notB, notC, notD, andA, andB, andC, andD;
+  or  O1(Y, andA, andB, andC, andD);
+  and A1(andA, A, notC);
+  and A2(andB, A, notB);
+  and A3(andC, A, notD);
+  and A4(andD,notB, notC, notD);
   not N1(notA, A);
   not N2(notB, B);
   not N3(notC, C);
@@ -30,7 +34,10 @@ module gateLeve02 (input wire A, B, C, output wire Y);   //Ejercicio02_Tabla02
 endmodule
 
 module gateLeve03 (input wire A, B, C, D, output wire Y);    //Ejercicio02_Tabla03
-  or  O1(Y, B, D);
+  or  O1(Y, B, andA, andB);
+  and A1(andA, notC, D);
+  and A2(andB, A, D);
+  not N1(notC, C);
 endmodule
 
 module gateLeve04 (input wire A, B, C, output wire Y);   //Ejercicio02_Tabla04
