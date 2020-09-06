@@ -1,4 +1,3 @@
-
 module MUX2_1(input wire s, d0, d1, output wire Y);
     assign Y = s ? d1 : d0;
 endmodule
