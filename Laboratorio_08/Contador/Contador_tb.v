@@ -1,17 +1,8 @@
-// Universidad del Valle de Guatemala
-// Valerie Valdez
-
-//                         Electrónica digital
-//                            Laboratorio 8
-//                          Testbench contador
-
-//Declarar el módulo
 module testbench();
   reg clk, rst, en, blo;
   reg [11:0]load;
   wire [11:0]val;
 
-//Llamar al módulo
 contador A1(clk, rst, en, blo, load, val);
 
 initial begin
@@ -41,7 +32,6 @@ always
 initial
 #200 $finish;
 
-//Gtk wave
 initial begin
   $dumpfile("Contador_tb.vcd");
   $dumpvars(0, testbench);

@@ -1,20 +1,12 @@
-// Universidad del Valle de Guatemala
-// Valerie Valdez
-
-//                         Electrónica digital
-//                            Laboratorio 8
-
-
-// Implementación de la memoria ROM de 4Kx8
+// Memoria ROM de 4Kx8
 module Mrom(input wire [11:0]address,
-  output wire [7:0]D); // Tamaño del dato de 8 bits
+  output wire [7:0]D);
 
-  reg[7:0] Mrom[0:4095]; // Ancho y localidades de memoria
+  reg[7:0] Mrom[0:4095];
 
-// Inicializar la memoria
   initial begin
-    $readmemb("Mrom.list", Mrom); // Leer los valores de la lista en binario
+    $readmemb("Mrom.list", Mrom);
   end
 
-  assign D = Mrom[address]; // Asignarle el valor en la dirección dada
+  assign D = Mrom[address]; 
 endmodule
